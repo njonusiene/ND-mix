@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: verdana;
+    background:  #c8eae3;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+header, .header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    gap: 20px;
+    position: sticky;
+    justify-content: space-between;
+    font-size: 1.5em;
+    text-decoration: none;
+    padding: 20px 20px;
+    background: #d0f1ed;
+    color: #306961;
+}
+
+h3 {
+    font-family: 'Allura', cursive;
+    margin-left: 180px;
+    background: #d0f1ed;
+}
+
+small {
+    font-size: 0.5em;
+}
+
+nav {
+    position: sticky;
+    align-items: center;
+    background: #d0f1ed;
+}
+
+nav a {
+    color: #306961;
+    text-decoration: none;
+    padding-left: 50px;
+    font-size: 0.5em;
+    transform: 0.2s;
+    background: #d0f1ed;
+}
+
+h3 i{
+    color: #d0f1ed;
+    background: #306961;
+    border-radius: 50%;
+}
+
+nav a:hover{
+    background: #306961;
+    color:  #d0f1ed;
+    padding: 15px 15px;
+    font-size: 0.7em;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+#btnHeader a,
+header button {
+    background: #306961;
+    color: #d0f1ed;
+    border-radius: 20px;
+    text-decoration: none;
+    padding: 20px;
+    border: none;
+    transition: 0.3s;
+}
+
+header i {
+    background: #306961;
+}
+
+#btnHeader a:hover,
+header button:hover{
+    background: #d0f1ed;
+    color: #306961;
+    cursor: pointer;
+}
+
+.homepage1,
+.homepage2 {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #306961;
+    font-family: Arial, Helvetica, sans-serif;
+    gap: 30px;
+    padding: 50px;
+
+}
+
+h1 {
+    font-size: 16em;
+    font-weight: 500;
+    text-shadow: 10px 10px 10px #306961;
+}
+
+#homeSlide {
+    font-size: 2em;
+    text-align: right;
+    width: 90%;
+    color: #306961;
+  }
+
+.homepage img{
+    height: 350px;
+    border-radius: 38px;
+    box-shadow: 10px 10px 10px 0 #306961;
+}
