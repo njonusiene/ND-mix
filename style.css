@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: verdana;
     background:  #c8eae3;
+    border: none;
 }
 
 body {
@@ -68,30 +69,37 @@ nav a:hover{
 
 
 #btnHeader a,
-header button {
+header button i {
     background: #306961;
+    display: block;
     color: #d0f1ed;
     border-radius: 20px;
     text-decoration: none;
-    padding: 20px;
+    padding: 10px;
     border: none;
     transition: 0.3s;
 }
 
-header i {
-    background: #306961;
+#btnHeader i:hover {
+    background: #d0f1ed;
+    color: #306961;
+    border: none;
+    border-radius: 20px;
 }
 
 #btnHeader a:hover,
-header button:hover{
+header button:hover,
+#btnHeader i:hover{
     background: #d0f1ed;
     color: #306961;
     cursor: pointer;
+    border: none;
+    border-radius: 20px;
 }
 
 .homepage1,
 .homepage2 {
-    width: 100%;
+    width: 80%;
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -99,26 +107,26 @@ header button:hover{
     justify-content: center;
     color: #306961;
     font-family: Arial, Helvetica, sans-serif;
-    gap: 30px;
-    padding: 50px;
+    gap: 40px;
+    padding: 30px;
 
 }
 
 h1 {
-    font-size: 16em;
+    font-size: 13em;
     font-weight: 500;
     text-shadow: 10px 10px 10px #306961;
 }
 
 #homeSlide {
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: right;
     width: 90%;
     color: #306961;
   }
 
 .homepage img{
-    height: 350px;
+    height: 275px;
     border-radius: 38px;
     box-shadow: 10px 10px 10px 0 #306961;
 }
