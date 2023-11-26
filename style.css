@@ -2,14 +2,14 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: verdana;
-    background:  #c8eae3;
     border: none;
 }
 
 body {
     width: 100%;
     height: 100vh;
+    background:  #c8eae3;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header, .header {
@@ -56,6 +56,7 @@ h3 i{
     color: #d0f1ed;
     background: #306961;
     border-radius: 50%;
+    transition: 0.2s;
 }
 
 nav a:hover{
@@ -69,7 +70,7 @@ nav a:hover{
 
 
 #btnHeader a,
-header button i {
+button {
     background: #306961;
     display: block;
     color: #d0f1ed;
@@ -77,7 +78,7 @@ header button i {
     text-decoration: none;
     padding: 10px;
     border: none;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 #btnHeader i:hover {
@@ -121,7 +122,7 @@ h1 {
 #homeSlide {
     font-size: 1.5em;
     text-align: right;
-    width: 90%;
+    width: 80%;
     color: #306961;
   }
 
@@ -130,3 +131,36 @@ h1 {
     border-radius: 38px;
     box-shadow: 10px 10px 10px 0 #306961;
 }
+
+#smallIcon1 {
+    width: 50px;
+    height: 50px;
+    background: skyblue;
+    position: absolute;
+    top: 17%;
+    left: 40%; /* Adjust the left position based on your design */
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+#smallIcon2 {
+    width: 50px;
+    height: 50px;
+    background: gold;
+    position: absolute;
+    border-radius: 5px;
+    top: 30%;
+    left: 60%; /* Adjust the left position based on your design */
+}
+
+#footer{
+    background: #220e31;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: space-around;
+    padding: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
