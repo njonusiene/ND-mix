@@ -6,7 +6,7 @@
 }
 
 body {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background:  #c8eae3;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -17,7 +17,7 @@ header, .header {
     flex-direction: row;
     width: 100%;
     height: auto;
-    gap: 20px;
+    gap: 10px;
     position: sticky;
     justify-content: space-between;
     font-size: 1.5em;
@@ -113,8 +113,18 @@ header button:hover,
 
 }
 
-h1 {
-    font-size: 13em;
+.homepage2{
+    margin-bottom: 50px;
+}
+
+.homepage1 h1 {
+    font-size: 12em;
+    font-weight: 500;
+    text-shadow: 10px 10px 10px #306961;
+}
+
+.homepage2 h1 {
+    font-size: 12em;
     font-weight: 500;
     text-shadow: 10px 10px 10px #306961;
 }
@@ -135,7 +145,7 @@ h1 {
 #smallIcon1 {
     width: 50px;
     height: 50px;
-    background: skyblue;
+    background: rgba(135, 207, 235, 0.746);
     position: absolute;
     top: 17%;
     left: 40%; /* Adjust the left position based on your design */
@@ -146,21 +156,162 @@ h1 {
 #smallIcon2 {
     width: 50px;
     height: 50px;
-    background: gold;
+    background: rgba(255, 217, 0, 0.555);
     position: absolute;
     border-radius: 5px;
     top: 30%;
-    left: 60%; /* Adjust the left position based on your design */
+    left: 60%; 
+}
+#smallIcon3 {
+    margin-left: 50%;
+    width: 50px;
+    height: 50px;
+    background: #49bf949b;
+    border-radius: 5px;
 }
 
+.container {
+    /* max-height: 100vh; */
+    margin: 10px;
+}
+
+.gallery{
+    width: 1000px;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.gallery div{
+    width: 90%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+    flex: none;
+}
+
+.gallery div img{
+    width: 250px;
+    filter: grayscale(100%);
+    transition: transform 0.5s;
+}
+
+.gallery::-webkit-scrollbar{
+    display: none;
+}
+
+.gallery-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10% auto;
+}
+
+#backBtn,#nextBtn{
+    width: 80px;
+    height: 80px;
+    cursor: grab;
+    margin: 40px;
+}
+
+.gallery div img:hover{
+    filter: grayscale(0);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.aKittens{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.aKittens p{
+    color: #306961;
+    padding: 50px;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+#food{
+    width: 100px;
+    height: 100px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    gap: 30px;
+    cursor: grab;
+    transition: 0.5s;
+}
+
+.panel{
+    width: auto;
+}
+
+.panel h1{
+    display: block;
+    font-size: 5em;
+    margin-top: 150px;
+    text-align: center;
+    text-shadow: 10px 10px 10px #306961;
+    color: #306961;
+  }
+
+.panel img{
+    margin-top: 30px;
+    height: 300px;
+    width: 200px;
+  }  
+ 
 #footer{
+    position: relative;
     background: #220e31;
+    width: 100%;
     color: white;
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    gap: 5px;
     justify-content: space-around;
-    padding: 100px;
+    padding: 50px;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.aboutUs{
+    width: 40%;
+}
+
+.aboutUs p{
+    opacity: 70%;
+    font-size: 0.7em;
+}
+
+.available{
+    font-size: 0.85em;
+    
+}
+
+ul{
+    list-style-type: none;
+    line-height: 27px;
+    font-size: 0.8em;
+    opacity: 70%;
+}
+
+.rights{
+    width: 86%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    bottom: 0;
+    font-size:0.7em;
+   
 }
 
