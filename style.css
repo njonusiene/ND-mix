@@ -68,7 +68,6 @@ nav a:hover{
     cursor: pointer;
 }
 
-
 #btnHeader a,
 button {
     background: #306961;
@@ -136,7 +135,7 @@ header button:hover,
     color: #306961;
   }
 
-.homepage img{
+.homepage img {
     height: 275px;
     border-radius: 38px;
     box-shadow: 10px 10px 10px 0 #306961;
@@ -315,3 +314,65 @@ ul{
    
 }
 
+@media (max-width: 768px) {
+    header, .header {
+        flex-direction: column;
+        min-width: 100vh;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    h3 {
+        margin-left: 10px;
+    }
+
+    nav a {
+        padding-left: 20px;
+    }
+
+    #btnHeader a,
+    button {
+        padding: 5px;
+    }
+
+    .homepage1,
+    .homepage2 {
+        width: 100%;
+    }
+
+    .homepage1 h1,
+    .homepage2 h1 {
+        font-size: 6em;
+    }
+
+    .homepage img {
+        height: 145px;
+    }
+
+    #smallIcon1,
+    #smallIcon2 {
+        width: 20px;
+        height: 20px;
+    }
+
+    #homeSlide {
+        font-size: 0.8em;
+    }
+
+    .panel h1 {
+        font-size: 3em;
+    }
+
+    .panel img {
+        height: 290px;
+        width: 150px;
+    }
+
+    #nextBtn,
+    #backBtn {
+        height: 35px;
+    }
+
+
+}
