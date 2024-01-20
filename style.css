@@ -268,7 +268,7 @@ header button:hover,
     width: 200px;
   }  
  
-#footer{
+#footer {
     position: relative;
     background: #220e31;
     width: 100%;
@@ -317,7 +317,7 @@ ul{
 @media (max-width: 768px) {
     header, .header {
         flex-direction: column;
-        min-width: 100vh;
+        width: 85vh;
         align-items: center;
         justify-content: center;
         gap: 15px;
@@ -338,7 +338,9 @@ ul{
 
     .homepage1,
     .homepage2 {
-        width: 100%;
+        width: 80%;
+        margin: 0;
+       
     }
 
     .homepage1 h1,
@@ -351,9 +353,10 @@ ul{
     }
 
     #smallIcon1,
-    #smallIcon2 {
-        width: 20px;
-        height: 20px;
+    #smallIcon2,
+    #smallIcon3 {
+        width: 30px;
+        height: 30px;
     }
 
     #homeSlide {
@@ -369,10 +372,174 @@ ul{
         width: 150px;
     }
 
+    .aKittens {
+        padding: 20px;
+        font-size: 1em;
+        width: 85%;
+        height: 20%;
+    }
+
     #nextBtn,
     #backBtn {
         height: 35px;
     }
 
+    .aKittens p  {
+        font-size: 1em;
+    }
+
+    .aKittens h1 {
+        font-size: 2em;
+    }
+
+    #food {
+        width: 50px;
+        height: 50px;
+    }
+
+    .gallery-wrap {
+        width: 85%;
+        margin: 0;
+    }
+
+    .gallery div img {
+        width: 200px;
+    }
+
+    #footer {
+        flex-direction: column;
+        width: 90%;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aboutUs{
+        width: 80%;
+    }
+
+}
+
+@media (max-width: 320px) {
+    body {
+        width: 60vh;
+    }
+    
+    header, .header {
+        flex-direction: column;
+        width: 60vh;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav {
+        position: relative;
+        align-items: center;
+    }
+
+    h3 {
+        margin-left: 10px;
+    }
+
+    nav a {
+        padding-left: 20px;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    nav a:hover {
+        font-size: 0.5em;
+        padding: 10px 10px;
+    }
+
+    #btnHeader a,
+    button {
+        padding: 5px;
+    }
+
+    .homepage1,
+    .homepage2 {
+        width: 100%;
+        margin: 0;
+       
+    }
+
+    .homepage1 h1,
+    .homepage2 h1 {
+        font-size: 2em;
+    }
+
+    .homepage img {
+        height: 125px;
+    }
+
+    #smallIcon1,
+    #smallIcon2,
+    #smallIcon3 {
+        width: 20px;
+        height: 20px;
+    }
+
+    #homeSlide {
+        font-size: 0.8em;
+    }
+
+    .panel h1 {
+        font-size: 1em;
+    }
+
+    .panel img {
+        height: 290px;
+        width: 150px;
+    }
+
+    .aKittens {
+        padding: 20px;
+        font-size: 1em;
+        width: 100%;
+        height: 20%;
+        min-height: 50px;
+    }
+
+    #nextBtn,
+    #backBtn {
+        height: 35px;
+    }
+
+    .aKittens p  {
+        font-size: 0.8em;
+        padding: 15px;
+    }
+
+    .aKittens h1 {
+        font-size: 1.6em;
+    }
+
+    #food {
+        width: 40px;
+        height: 40px;
+    }
+
+    .gallery-wrap {
+        width: 95%;
+        margin: 0;
+    }
+
+    .gallery div img {
+        width: 200px;
+    }
+
+    #footer {
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aboutUs{
+        width: 100%;
+    }
 
 }
